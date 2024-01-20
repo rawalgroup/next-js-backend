@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { buttonVariants } from "./ui/button"
 
 export function SiteHeader() {
   return (
@@ -19,10 +20,10 @@ export function SiteHeader() {
               rel="noreferrer"
             >
               <div
-                // className={buttonVariants({
-                //   size: "sm",
-                //   variant: "ghost",
-                // })}
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                })}
               >
                 <Icons.gitHub className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
@@ -34,10 +35,10 @@ export function SiteHeader() {
               rel="noreferrer"
             >
               <div
-                // className={buttonVariants({
-                //   size: "sm",
-                //   variant: "ghost",
-                // })}
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                })}
               >
                 <Icons.twitter className="h-5 w-5 fill-current" />
                 <span className="sr-only">Twitter</span>
