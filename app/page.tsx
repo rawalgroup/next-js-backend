@@ -10,7 +10,7 @@ export default function IndexPage() {
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
           Simple usage how to use Tailwind CSS with Next.js
         </h1>
-        <p className="text-muted-foreground max-w-[700px] text-lg">
+        <p className="max-w-[700px] text-lg">
           Click on <Link href={"/api-doc"}>Doc</Link> to see the swagger UI.
         </p>
       </div>
