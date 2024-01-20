@@ -24,19 +24,19 @@ export const getApiDocs = async () => {
             scheme: "bearer",
             bearerFormat: "JWT",
           },
-          OAuth2: {
-            type: "oauth2",
-            flows: {
-              authorizationCode: {
-                authorizationUrl: "https://example.com/oauth/authorize",
-                tokenUrl: "https://example.com/oauth/token",
-                scopes: {
-                  read: "Grants read access",
-                  write: "Grants write access",
-                },
-              },
-            },
-          },
+          // OAuth2: {
+          //   type: "oauth2",
+          //   flows: {
+          //     authorizationCode: {
+          //       authorizationUrl: "https://example.com/oauth/authorize",
+          //       tokenUrl: "https://example.com/oauth/token",
+          //       scopes: {
+          //         read: "Grants read access",
+          //         write: "Grants write access",
+          //       },
+          //     },
+          //   },
+          // },
         },
       },
       security: [],
