@@ -1,3 +1,4 @@
+import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
@@ -14,8 +15,7 @@ export default function Home() {
       </div>
       <div className="flex gap-4">
         {siteConfig.links.docs && (
-          <Link href={siteConfig.links.docs} target="_blank" rel="noreferrer"
-           >
+          <Link href={siteConfig.links.docs} target="_blank" rel="noreferrer" className={buttonVariants()}>
             Documentation
           </Link>
         )}
@@ -24,6 +24,7 @@ export default function Home() {
             href={siteConfig.links.github}
             target="_blank"
             rel="noreferrer"
+            className={buttonVariants({ variant: "outline" })}
           >
             GitHub
           </Link>
