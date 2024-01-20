@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
-// import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 
 interface MainNavProps {
@@ -22,17 +22,16 @@ export function MainNav({ items }: MainNavProps) {
           {items?.map(
             (item, index) =>
               item.href && (
-                <></>
-                // <Link
-                //   key={index}
-                //   href={item.href}
-                //   className={cn(
-                //     "text-muted-foreground flex items-center text-sm font-medium",
-                //     item.disabled && "cursor-not-allowed opacity-80"
-                //   )}
-                // >
-                //   {item.title}
-                // </Link>
+                <Link
+                  key={index}
+                  href={item.href}
+                  className={cn(
+                    "text-muted-foreground flex items-center text-sm font-medium",
+                    item.disabled && "cursor-not-allowed opacity-80"
+                  )}
+                >
+                  {item.title}
+                </Link>
               )
           )}
         </nav>
