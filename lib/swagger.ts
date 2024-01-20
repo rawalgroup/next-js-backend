@@ -3,11 +3,9 @@ import { createSwaggerSpec } from "next-swagger-doc";
 // Import the necessary modules for Swagger UI
 // import "swagger-ui-themes/themes/3.x/theme-material.css";
 // import "swagger-ui-themes/themes/3.x/theme-monokai.css";
-import "swagger-ui-react/swagger-ui.css";
-import "swagger-ui-react/swagger-ui-bundle.js";
-
-// Import server-only code if needed
-import "server-only";
+// import "swagger-ui-react/swagger-ui.css";
+// import "swagger-ui-react/swagger-ui-bundle.js";
+// import "server-only";
 
 export const getApiDocs = async () => {
   // Configure Swagger documentation
